@@ -78,6 +78,8 @@ cd "C:\Users\vaishu\hospital 1"
 Backend: http://127.0.0.1:5000
 Frontend: http://localhost:5173
 
+```
+
 ##⚙️ Manual Setup
 ## Backend:
 cd backend
@@ -89,11 +91,14 @@ cd frontend
 npm install
 npm run dev
 
+```
+
 ##🔐 Mock Credentials for Testing
 Admin    : admin     / admin123
 Doctor   : doctor1   / doc123
 Patient  : patient1  / pat123
 
+```
 
 ## 📁 Project Structure
 hospital 1/
@@ -108,6 +113,7 @@ hospital 1/
 │   ├── package.json
 │   └── vite.config.js
 
+```
 
 ##🎯 Features in Detail
 ##📅 Multi-Step Booking
@@ -115,13 +121,16 @@ hospital 1/
 2. Enter patient information
 3. Choose payment method
 4. Confirm booking
+```
 ##👨‍⚕️ Doctor Features
 • Queue management
 • Patient medical histories
 • Real-time vitals tracking
 • Appointment rescheduling
+```
 ##🧑 Patient Features
 • Personal health profile
 • Appointment tracking
 • Care tips & recommendations
 • Doctor recommendations by specialty
+```
