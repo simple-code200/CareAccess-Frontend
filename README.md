@@ -61,12 +61,6 @@ Supports:
 - Flask 3.1.0  
 - Flask-CORS 5.0.0  
 
-### DevOps
-- Docker & Docker Compose  
-- GitLab CI/CD  
-- Nginx  
-
----
 
 ## 🚀 Quick Start
 
@@ -84,23 +78,24 @@ cd "C:\Users\vaishu\hospital 1"
 Backend: http://127.0.0.1:5000
 Frontend: http://localhost:5173
 
-# ⚙️ Manual Setup
-Backend
+##⚙️ Manual Setup
+## Backend:
 cd backend
 python -m pip install -r requirements.txt
 python app.py
-Frontend
+
+## Frontend:
 cd frontend
 npm install
 npm run dev
 
-#🔐 Mock Credentials for Testing
-Role	Username	Password
-👨‍💼 Admin	admin	admin123
-👨‍⚕️ Doctor	doctor1	doc123
-🧑 Patient	patient1	pat123
+##🔐 Mock Credentials for Testing
+Admin    : admin     / admin123
+Doctor   : doctor1   / doc123
+Patient  : patient1  / pat123
 
-# 📁 Project Structure
+
+## 📁 Project Structure
 hospital 1/
 ├── backend/
 │   ├── app.py
@@ -114,19 +109,19 @@ hospital 1/
 │   └── vite.config.js
 
 
-# 🎯 Features in Detail
-# 📅 Multi-Step Booking
-Select available doctor
-Enter patient information
-Choose payment method
-Confirm booking
-#👨‍⚕️ Doctor Features
-Queue management
-Patient medical histories
-Real-time vitals tracking
-Appointment rescheduling
-#🧑 Patient Features
-Personal health profile
-Appointment tracking
-Care tips & recommendations
-Doctor recommendations by specialty
+##🎯 Features in Detail
+##📅 Multi-Step Booking
+1. Select available doctor
+2. Enter patient information
+3. Choose payment method
+4. Confirm booking
+##👨‍⚕️ Doctor Features
+• Queue management
+• Patient medical histories
+• Real-time vitals tracking
+• Appointment rescheduling
+##🧑 Patient Features
+• Personal health profile
+• Appointment tracking
+• Care tips & recommendations
+• Doctor recommendations by specialty
