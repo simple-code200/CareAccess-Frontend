@@ -1,228 +1,131 @@
-\# Care Access Portal 🏥
-
-
+ # Care Access Portal 🏥
 
 A comprehensive healthcare management system that streamlines interactions between patients, doctors, and administrators through a role-based web portal.
 
+## 📖 Overview
 
+Care Access Portal is a full-stack healthcare application designed to simplify appointment booking, medical record management, and doctor-patient interactions.
 
-\## Overview
+The system provides specialized dashboards for:
 
+- 👨‍💼 Admins  
+- 👨‍⚕️ Doctors  
+- 🧑 Patients  
 
+---
 
-Care Access Portal is a full-stack healthcare application designed to simplify appointment booking, medical record management, and doctor-patient interactions. The system provides specialized dashboards for three user types: Admins, Doctors, and Patients.
+## ✨ Key Features
 
+### 🔐 Role-Based Authentication
+Mock login system for:
+- Admin
+- Doctor
+- Patient
 
+### 👨‍💼 Admin Dashboard
+- Browse 20+ specialist doctors  
+- Multi-step appointment booking workflow  
+- Real-time appointment management  
 
-\## ✨ Key Features
+### 👨‍⚕️ Doctor Dashboard
+- View appointment queue with priority indicators  
+- Access comprehensive patient medical records  
+- Reschedule appointments  
 
+### 🧑 Patient Portal
+- View upcoming appointments  
+- Track medical history and prescriptions  
+- Find recommended doctors by specialization  
+- Monitor appointment details and clinic location  
 
+### 💳 Payment Integration
+Supports:
+- Cash  
+- UPI  
 
-\- \*\*Role-Based Authentication\*\*: Mock login system for Admin, Doctor, and Patient roles
+### 🔄 Real-Time Updates
+- Live appointment status tracking  
 
-\- \*\*Admin Dashboard\*\*:
+---
 
-&#x20; - Browse 20+ specialist doctors
+## 🛠️ Tech Stack
 
-&#x20; - Multi-step appointment booking workflow
+### Frontend
+- React 18.3.1  
+- React Router DOM 6.28.0  
+- Vite 5.4.10  
+- CSS3  
 
-&#x20; - Real-time appointment management
+### Backend
+- Python 3.x  
+- Flask 3.1.0  
+- Flask-CORS 5.0.0  
 
-&#x20; 
+### DevOps
+- Docker & Docker Compose  
+- GitLab CI/CD  
+- Nginx  
 
-\- \*\*Doctor Dashboard\*\*:
+---
 
-&#x20; - View appointment queue with priority indicators
+## 🚀 Quick Start
 
-&#x20; - Access comprehensive patient medical records
+### Prerequisites
+- Python 3.8+  
+- Node.js 16+  
+- npm  
 
-&#x20; - Reschedule appointments
-
-&#x20; 
-
-\- \*\*Patient Portal\*\*:
-
-&#x20; - View upcoming appointments
-
-&#x20; - Track medical history and prescriptions
-
-&#x20; - Find recommended doctors by specialization
-
-&#x20; - Monitor appointment details and clinic location
-
-
-
-\- \*\*Payment Integration\*\*: Support for Cash and UPI payment methods
-
-\- \*\*Real-Time Updates\*\*: Live appointment status tracking
-
-
-
-\## 🛠️ Tech Stack
-
-
-
-\*\*Frontend:\*\*
-
-\- React 18.3.1 - UI framework
-
-\- React Router DOM 6.28.0 - Client-side routing
-
-\- Vite 5.4.10 - Fast build tool
-
-\- CSS3 - Responsive styling
-
-
-
-\*\*Backend:\*\*
-
-\- Python 3.x - Server runtime
-
-\- Flask 3.1.0 - Web framework
-
-\- Flask-CORS 5.0.0 - Cross-origin support
-
-
-
-\*\*DevOps:\*\*
-
-\- Docker \& Docker Compose - Containerization
-
-\- GitLab CI/CD - Continuous integration
-
-\- Nginx - Production reverse proxy
-
-
-
-\## 🚀 Quick Start
-
-
-
-\### Prerequisites
-
-\- Python 3.8+
-
-\- Node.js 16+
-
-\- npm
-
-
-
-\### Automated Setup (Windows)
+### Automated Setup (Windows)
 
 ```powershell
-
-cd "C:\\Users\\vaishu\\hospital 1"
-
-.\\run.ps1
-
-
+cd "C:\Users\vaishu\hospital 1"
+.\run.ps1
 
 Backend: http://127.0.0.1:5000
-
 Frontend: http://localhost:5173
 
-
-
-
-
-Manual Setup
-
-
-
-Backend:
-
+⚙️ Manual Setup
+Backend
 cd backend
-
 python -m pip install -r requirements.txt
-
 python app.py
-
-
-
-Frontend:
-
+Frontend
 cd frontend
-
 npm install
-
 npm run dev
-
-
-
 🔐 Mock Credentials for Testing
-
 Role	Username	Password
-
-Admin	admin		admin123
-
-Doctor	doctor1		doc123
-
+Admin	admin	admin123
+Doctor	doctor1	doc123
 Patient	patient1	pat123
-
-
-
 📁 Project Structure
-
-
-
 hospital 1/
-
-├── backend/                    # Flask REST API
-
-│   ├── app.py                 # Main application
-
-│   └── requirements.txt        # Python dependencies
-
-├── frontend/                   # React + Vite app
-
+├── backend/
+│   ├── app.py
+│   └── requirements.txt
+│
+├── frontend/
 │   ├── src/
-
-│   │   ├── App.jsx            # Main router
-
-│   │   └── components/        # UI components
-
-│   ├── package.json           # NPM dependencies
-
-│   └── vite.config.js         # Vite configuration
-
-├── docker-compose.yml         # Container orchestration
-
-└── .gitlab-ci.yml             # CI/CD pipeline
-
-
-
-
-
+│   │   ├── App.jsx
+│   │   └── components/
+│   ├── package.json
+│   └── vite.config.js
+│
+├── docker-compose.yml
+└── .gitlab-ci.yml
 🎯 Features in Detail
-
-Multi-Step Booking
-
+📅 Multi-Step Booking
 Select available doctor
-
-Enter patient information (name, age)
-
-Choose payment method (Cash/UPI)
-
-Confirm and complete booking
-
-Doctor Features
-
-Queue management with priority indicators
-
-Comprehensive patient medical histories
-
-Real-time vitals and medication tracking
-
+Enter patient information
+Choose payment method
+Confirm booking
+👨‍⚕️ Doctor Features
+Queue management
+Patient medical histories
+Real-time vitals tracking
 Appointment rescheduling
-
-Patient Features
-
+🧑 Patient Features
 Personal health profile
-
 Appointment tracking
-
-Care tips and recommendations
-
+Care tips & recommendations
 Doctor recommendations by specialty
-
