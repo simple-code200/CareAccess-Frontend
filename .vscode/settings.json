@@ -1,0 +1,23 @@
+{
+  "terminal.integrated.shellIntegration.enabled": false,
+  "audioCues.enabled": "off",
+  "accessibility.signals.chatEditModifiedFile": "off",
+  "accessibility.signals.chatRequestSent": "off",
+  "accessibility.signals.progress": "off",
+  "accessibility.signals.lineHasError": {
+    "sound": "off"
+  },
+  "accessibility.signals.lineHasWarning": {
+    "sound": "off"
+  },
+  "accessibility.signals.taskCompleted": {
+    "sound": "off"
+  },
+  "accessibility.signals.taskFailed": {
+    "sound": "off"
+  },
+  "accessibility.signals.terminalBell": {
+    "sound": "off"
+  },
+  "terminal.integrated.enableVisualBell": false
+}
