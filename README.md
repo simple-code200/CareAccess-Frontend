@@ -79,58 +79,70 @@ Backend: http://127.0.0.1:5000
 Frontend: http://localhost:5173
 
 ```
+## ⚙️ Manual Setup
 
-##⚙️ Manual Setup
-## Backend:
+### Backend
+
+```bash
 cd backend
 python -m pip install -r requirements.txt
 python app.py
 
-## Frontend:
+```
+
+### Frontend
+
+```bash
 cd frontend
 npm install
 npm run dev
 
 ```
 
-##🔐 Mock Credentials for Testing
-Admin    : admin     / admin123
-Doctor   : doctor1   / doc123
-Patient  : patient1  / pat123
+## 🔐 Mock Credentials for Testing
+### Admin : admin     / admin123
+### Doctor   : doctor1   / doc123
+### Patient  : patient1  / pat123
 
 ```
-
+```
 ## 📁 Project Structure
+
+```bash
 hospital 1/
 ├── backend/
 │   ├── app.py
 │   └── requirements.txt
 │
 ├── frontend/
-│   ├── src/
-│   │   ├── App.jsx
-│   │   └── components/
-│   ├── package.json
-│   └── vite.config.js
-
+   ├── src/
+   │   ├── App.jsx
+   │   └── components/
+   ├── package.json
+   └── vite.config.js
 ```
 
-##🎯 Features in Detail
-##📅 Multi-Step Booking
-1. Select available doctor
-2. Enter patient information
-3. Choose payment method
-4. Confirm booking
-```
-##👨‍⚕️ Doctor Features
-• Queue management
-• Patient medical histories
-• Real-time vitals tracking
-• Appointment rescheduling
-```
-##🧑 Patient Features
-• Personal health profile
-• Appointment tracking
-• Care tips & recommendations
-• Doctor recommendations by specialty
-```
+
+
+
+## 🎯 Features in Detail
+
+
+### 📅 Multi-Step Booking
+- Select an available doctor
+- Enter patient information
+- Choose payment method
+- Confirm booking
+
+### 👨‍⚕️ Doctor Features
+- Queue management
+- Patient medical histories
+- Real-time vitals tracking
+- Appointment rescheduling
+
+### 🧑 Patient Features
+- Personal health profile
+- Appointment tracking
+- Care tips & recommendations
+- Doctor recommendations by specialty
+
