@@ -84,7 +84,7 @@ cd "C:\Users\vaishu\hospital 1"
 Backend: http://127.0.0.1:5000
 Frontend: http://localhost:5173
 
-⚙️ Manual Setup
+# ⚙️ Manual Setup
 Backend
 cd backend
 python -m pip install -r requirements.txt
@@ -93,12 +93,14 @@ Frontend
 cd frontend
 npm install
 npm run dev
-🔐 Mock Credentials for Testing
+
+#🔐 Mock Credentials for Testing
 Role	Username	Password
-Admin	admin	admin123
-Doctor	doctor1	doc123
-Patient	patient1	pat123
-📁 Project Structure
+👨‍💼 Admin	admin	admin123
+👨‍⚕️ Doctor	doctor1	doc123
+🧑 Patient	patient1	pat123
+
+# 📁 Project Structure
 hospital 1/
 ├── backend/
 │   ├── app.py
@@ -110,21 +112,20 @@ hospital 1/
 │   │   └── components/
 │   ├── package.json
 │   └── vite.config.js
-│
-├── docker-compose.yml
-└── .gitlab-ci.yml
-🎯 Features in Detail
-📅 Multi-Step Booking
+
+
+# 🎯 Features in Detail
+# 📅 Multi-Step Booking
 Select available doctor
 Enter patient information
 Choose payment method
 Confirm booking
-👨‍⚕️ Doctor Features
+#👨‍⚕️ Doctor Features
 Queue management
 Patient medical histories
 Real-time vitals tracking
 Appointment rescheduling
-🧑 Patient Features
+#🧑 Patient Features
 Personal health profile
 Appointment tracking
 Care tips & recommendations
