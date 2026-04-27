@@ -1,14 +1,3 @@
-# Care Access Portal
-
-This project has:
-
-- A Flask backend in `backend`
-- A Vite + React frontend in `frontend`
-- Mock login for `Admin`, `Doctor`, and `Patient`
-- Admin dashboard with doctor listing and appointment booking
-
-## Quick Start
-
 # Care Access Portal 🏥
 A comprehensive healthcare management system that streamlines interactions between patients, doctors, and administrators through a role-based web portal.
 
