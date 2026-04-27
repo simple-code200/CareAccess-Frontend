@@ -20,6 +20,11 @@ export default [
     plugins: {
       react: reactPlugin
     },
+    settings: {
+      react: {
+        version: "detect"
+      }
+    },
     rules: {
       ...reactPlugin.configs.recommended.rules,
       "react/react-in-jsx-scope": "off"
