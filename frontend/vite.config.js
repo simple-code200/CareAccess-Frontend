@@ -11,10 +11,5 @@ export default defineConfig({
       "/appointments": "http://127.0.0.1:5000",
       "/book-appointment": "http://127.0.0.1:5000"
     }
-  },
-  test: {
-    environment: 'jsdom',
-    globals: true,
-    include: ['**/*.{test,spec}.{js,jsx}']
   }
 });
