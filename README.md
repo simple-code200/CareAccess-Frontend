@@ -1,123 +1,148 @@
-# Care Access Portal
+ # Care Access Portal 🏥
 
-This project has:
+A comprehensive healthcare management system that streamlines interactions between patients, doctors, and administrators through a role-based web portal.
 
-- A Flask backend in `backend`
-- A Vite + React frontend in `frontend`
-- Mock login for `Admin`, `Doctor`, and `Patient`
-- Admin dashboard with doctor listing and appointment booking
+## 📖 Overview
 
-## Quick Start
+Care Access Portal is a full-stack healthcare application designed to simplify appointment booking, medical record management, and doctor-patient interactions.
 
-From the project root:
+The system provides specialized dashboards for:
+
+- 👨‍💼 Admins  
+- 👨‍⚕️ Doctors  
+- 🧑 Patients  
+
+---
+
+## ✨ Key Features
+
+### 🔐 Role-Based Authentication
+Mock login system for:
+- Admin
+- Doctor
+- Patient
+
+### 👨‍💼 Admin Dashboard
+- Browse 20+ specialist doctors  
+- Multi-step appointment booking workflow  
+- Real-time appointment management  
+
+### 👨‍⚕️ Doctor Dashboard
+- View appointment queue with priority indicators  
+- Access comprehensive patient medical records  
+- Reschedule appointments  
+
+### 🧑 Patient Portal
+- View upcoming appointments  
+- Track medical history and prescriptions  
+- Find recommended doctors by specialization  
+- Monitor appointment details and clinic location  
+
+### 💳 Payment Integration
+Supports:
+- Cash  
+- UPI  
+
+### 🔄 Real-Time Updates
+- Live appointment status tracking  
+
+---
+
+## 🛠️ Tech Stack
+
+### Frontend
+- React 18.3.1  
+- React Router DOM 6.28.0  
+- Vite 5.4.10  
+- CSS3  
+
+### Backend
+- Python 3.x  
+- Flask 3.1.0  
+- Flask-CORS 5.0.0  
+
+
+## 🚀 Quick Start
+
+### Prerequisites
+- Python 3.8+  
+- Node.js 16+  
+- npm  
+
+### Automated Setup (Windows)
 
 ```powershell
 cd "C:\Users\vaishu\hospital 1"
 .\run.ps1
+
+Backend: http://127.0.0.1:5000
+Frontend: http://localhost:5173
+
 ```
+## ⚙️ Manual Setup
 
-That script opens two PowerShell windows:
+### Backend
 
-- Backend at `http://127.0.0.1:5000`
-- Frontend at `http://127.0.0.1:5173`
-
-## Manual Start
-
-Backend:
-
-```powershell
-cd "C:\Users\vaishu\hospital 1\backend"
+```bash
+cd backend
 python -m pip install -r requirements.txt
 python app.py
+
 ```
 
-Frontend:
+### Frontend
 
-```powershell
-cd "C:\Users\vaishu\hospital 1\frontend"
+```bash
+cd frontend
 npm install
 npm run dev
+
 ```
 
-## Docker Run
+## 🔐 Mock Credentials for Testing
+### Admin : admin     / admin123
+### Doctor   : doctor1   / doc123
+### Patient  : patient1  / pat123
 
-From the project root:
+```
+```
+## 📁 Project Structure
 
-```powershell
-cd "C:\Users\vaishu\hospital 1"
-docker compose up --build
+```bash
+hospital 1/
+├── backend/
+│   ├── app.py
+│   └── requirements.txt
+│
+├── frontend/
+   ├── src/
+   │   ├── App.jsx
+   │   └── components/
+   ├── package.json
+   └── vite.config.js
 ```
 
-That starts:
 
-- Backend at `http://127.0.0.1:5000`
-- Frontend at `http://127.0.0.1:8080`
 
-To stop the containers:
 
-```powershell
-docker compose down
-```
+## 🎯 Features in Detail
 
-## GitLab CI + Docker Hub
 
-This repo now includes:
+### 📅 Multi-Step Booking
+- Select an available doctor
+- Enter patient information
+- Choose payment method
+- Confirm booking
 
-- `backend/Dockerfile`
-- `frontend/Dockerfile`
-- `frontend/nginx.conf`
-- `docker-compose.yml`
-- `.gitlab-ci.yml`
+### 👨‍⚕️ Doctor Features
+- Queue management
+- Patient medical histories
+- Real-time vitals tracking
+- Appointment rescheduling
 
-Before pushing to GitLab, add these CI/CD variables in your GitLab project:
+### 🧑 Patient Features
+- Personal health profile
+- Appointment tracking
+- Care tips & recommendations
+- Doctor recommendations by specialty
 
-- `DOCKERHUB_USERNAME`
-- `DOCKERHUB_TOKEN`
-
-Then push your code to the `main` branch. The pipeline will:
-
-1. Build the frontend Docker image
-2. Build the backend Docker image
-3. Push both images to Docker Hub with `latest` and commit SHA tags
-
-Docker Hub image names used by the pipeline:
-
-- `pradyumnajkumar/lib-frontend`
-- `pradyumnajkumar/lib-backend`
-
-## Mock Credentials
-
-Use these hardcoded credentials on the login page:
-
-- Admin: `admin` / `admin123`
-- Doctor: `doctor1` / `doc123`
-- Patient: `patient1` / `pat123`
-
-## Available Backend APIs
-
-- `POST /login`
-- `GET /doctors`
-- `GET /appointments`
-- `POST /book-appointment`
-
-## Notes
-
-- The frontend proxy is already configured in `frontend/vite.config.js`, so requests to `/login`, `/doctors`, `/appointments`, and `/book-appointment` are forwarded to the Flask backend.
-- The backend uses mock data only. No database is required.
-- If PowerShell blocks the script, run:
-
-```powershell
-powershell -ExecutionPolicy Bypass -File .\run.ps1
-```
-
-## If `npm run dev` fails with `spawn EPERM`
-
-Try reinstalling the frontend dependencies:
-
-```powershell
-cd "C:\Users\vaishu\hospital 1\frontend"
-Remove-Item -Recurse -Force node_modules
-Remove-Item -Force package-lock.json
-npm install
-npm run dev
-```
