@@ -9,10 +9,7 @@ This project has:
 
 ## Quick Start
 
-From the project root:# Care Access Portal 🏥
-
-[![CI](https://github.com/simple-code200/CareAccess-Frontend/actions/workflows/ci.yml/badge.svg)](https://github.com/simple-code200/CareAccess-Frontend/actions/workflows/ci.yml)
-
+# Care Access Portal 🏥
 A comprehensive healthcare management system that streamlines interactions between patients, doctors, and administrators through a role-based web portal.
 
 ## 📖 Overview
